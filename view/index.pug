@@ -1,0 +1,41 @@
+﻿extends layout
+
+block home
+    label Total: #{data.length}
+    hr
+    a(href="/add", title="title").btn Add
+    table.list
+      thead
+        tr
+          th student ID
+          th First Name
+          th Last Name
+          th Gender
+          th DOB
+          th Address 1
+          th Address 2
+          th Country
+          th State
+          th City
+          th Poscode
+          th Phone Number
+          th 
+      each item in data
+        tr
+          td= item.studentID
+          td= item.firstName
+          td= item.lastName
+          td= item.gender
+          td= item.dob
+          td= item.address1
+          td= item.address2
+          td= item.country
+          td= item.state
+          td= item.city
+          td= item.poscode
+          td= item.phoneNum
+          td  
+            a(href="/edit/#{item.id}", title="Edit").icon
+              i(aria-hidden="true").fa.fa-pencil-square
+            a(href="/delete/#{item.id}", title="Delete" onclick="return confirm('Delete user： #{item.studentID} ?');").icon
+              i(aria-hidden="true").fa.fa-trash
