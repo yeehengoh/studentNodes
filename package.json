@@ -1,0 +1,30 @@
+{
+  "name": "student-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start ./bin/www",
+    "stop": "pm2 stop ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "description": "This is student directory written by node.js with mssql",
+  "main": "./routes/index.js",
+  "author": {
+    "name": "Mandy"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "country-state-city": "^1.0.0",
+    "debug": "^4.1.1",
+    "eslint": "^5.16.0",
+    "express": "^4.14.0",
+    "gulp-jade": "^1.1.0",
+    "morgan": "^1.7.0",
+    "mssql": "^5.1.0",
+    "nodemon": "^1.19.1",
+    "pm2": "^3.5.1",
+    "serve-favicon": "^2.3.0"
+  }
+}
