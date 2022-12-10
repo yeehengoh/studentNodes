@@ -19,7 +19,7 @@
     "country-state-city": "^1.0.0",
     "debug": "^4.1.1",
     "eslint": "^5.16.0",
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "gulp-jade": "^1.1.0",
     "morgan": "^1.7.0",
     "mssql": "^5.1.0",
